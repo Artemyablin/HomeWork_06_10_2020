@@ -1,0 +1,140 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ДЗ</title>
+    <style>
+        :root{
+            --p: 10px;
+            --gap: 10px;
+        }
+
+        .grid{
+            display: grid;
+        }
+
+        .grid.grid-3 {
+            grid-template-columns: repeat(8, 100px);
+            grid-template-rows: repeat(6, 100px);
+        }
+
+        .grid > .grid-1 {
+            grid-column-end: span 8;
+            background-color: darkgreen;
+
+        }
+
+        .grid > .grid-2 {
+            background-color: purple;
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        .grid > .grid-3 {
+            background-color: purple;
+            grid-row: span 2;
+        }
+
+        .grid > .grid-4 {
+            background-color: purple;
+            grid-column-end: span 3;
+        }
+
+        .grid > .grid-5 {
+            background-color: darkred;
+            grid-row: span 2;
+        }
+
+        .grid > .grid-6 {
+            background-color: lightgreen;
+
+        }
+
+        .grid > .grid-7 {
+            background-color: indianred;
+            grid-row: span 3;
+            grid-column: span 2;
+        }
+
+        .grid > .grid-8 {
+            background-color: darkred;
+            grid-row: span 2;
+        }
+
+        .grid > .grid-9 {
+            background-color: orange;
+        }
+
+        .grid > .grid-10 {
+            background-color: darkorange;
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .grid > .grid-11 {
+            background-color: lightgreen;
+            grid-column: span 2;
+        }
+
+        .grid > .grid-12 {
+            background-color: indianred;
+            grid-column: span 2;
+        }
+
+        .grid > .grid-13 {
+            background-color: darkgreen;
+            grid-row: span 2;
+        }
+
+        .grid > .grid-14 {
+            background-color: darkgreen;
+        }
+
+        .grid > .grid-15 {
+            background-color: darkred;
+        }
+
+        .grid > .grid-16 {
+            background-color: darkgreen;
+            grid-column: span 2;
+        }
+
+        .grid > .grid-17{
+            background-color: indianred;
+            grid-column: span 3;
+        }
+
+
+        .p {
+            padding: var(--p);
+        }
+
+        .gap {
+            gap: var(--gap);
+        }
+
+    </style>
+</head>
+<body>
+    <sectionid class="grid grid-3 p gap">
+        <article class="grid-1">1</article>
+        <article class="grid-2">2</article>
+        <article class="grid-3">3</article>
+        <article class="grid-4">4</article>
+        <article class="grid-5">5</article>
+        <article class="grid-6">6</article>
+        <article class="grid-7">7</article>
+        <article class="grid-8">8</article>
+        <article class="grid-9">9</article>
+        <article class="grid-10">10</article>
+        <article class="grid-11">11</article>
+        <article class="grid-12">12</article>
+        <article class="grid-13">13</article>
+        <article class="grid-14">14</article>
+        <article class="grid-15">15</article>
+        <article class="grid-16">16</article>
+        <article class="grid-17">17</article>
+    </sectionid>
+</body>
+</html>
